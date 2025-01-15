@@ -1,18 +1,11 @@
-const express = require('express')
-const router = express.Router()
-const user = require('../model/Users')
+import { Router } from 'express';
+import { signUpController } from '../controller/singupController.js';
+import { signinController } from '../controller/signinController.js';
 
-router.post('/register',async (req,res)=>{
-    try{
-        const{name,email,password}=req.body;
-        if(!name,!email,!password) return res.status(4000).json({status: false,message:"all files are require"})
-           
-            const existinguser = await user
-        return res.status(201).json({status: true,message:"register successful"})
-    }catch(error){
 
-    }
+const router = Router();
 
-})
+router.post('/signup', signUpController)
+router.post('/signin', signinController)
 
-module.exports = router;
+export default router;
