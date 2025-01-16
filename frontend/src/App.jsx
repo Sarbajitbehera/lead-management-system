@@ -6,9 +6,11 @@ import LoginPage from "./components/footer"
 import Login from "./pages/login/Login"
 import Signin from "./pages/signup/Signup"
 import Hero from "./pages/new/Hero"
-import Hero1 from "./pages/new2/Hero1"
+import Hero1 from "./pages/new2/Hero1.jsx"
 import Navbar1 from "./pages/new2/Navbar1"
-import DashBoard from "./pages/dashboard/dashBoard";
+
+
+
 
 
 function App() {
@@ -16,9 +18,7 @@ function App() {
 
   return (
     <>
-  {/* <Home/> */}
-  {/* <DashBoard/> */}
-  {/* <Login /> */}
+
     <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,18 +28,8 @@ function App() {
           <Route path="/new" element={<Hero1 />} />
         </Routes>
       </Router>
-{/* 
-    
-      <div className="flex ">
-      <Login/>
-      <Signin/>
-      </div>
-      <br></br>
-      <Navbar1/>
-      <Hero/>
-      <Hero1/>
-      <br></br>
-      < Footer /> */}
+  
+
     </>
   )
 }

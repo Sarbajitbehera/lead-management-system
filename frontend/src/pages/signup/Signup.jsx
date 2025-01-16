@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Register() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500">
@@ -55,15 +55,15 @@ function Register() {
             type="submit"
             className="w-full py-2 bg-blue-500 text-white font-bold rounded-lg hover:opacity-90 transition duration-300"
           >
-            Sign Up
+           <Link to="/signin">sign up</Link>
           </button>
         </form>
         <div className="text-center mt-4">
           <p className="text-gray-700 text-sm">
             Already have an account?{" "}
-            <a href="#" className="text-blue-500 hover:underline">
-              Sign In
-            </a>
+            <button href="#" className="text-blue-500 hover:underline">
+            <Link to="/signin">sign in</Link>
+            </button>
           </p>
         </div>
       </div>

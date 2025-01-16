@@ -40,9 +40,9 @@ function Login() {
           </a>
           <p className="text-gray-700 text-sm mt-2">
             Don't have an account?{" "}
-            <a href="#" className="text-blue-500 hover:underline">
-              Sign up
-            </a>
+            <button className="text-blue-500 hover:underline">
+            <Link to="/signup">sign up</Link>
+            </button>
           </p>
         </div>
       </div>
