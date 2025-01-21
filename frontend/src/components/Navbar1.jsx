@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="flex justify-between px-11 items-center h-[85px] border-[1px] border-black">
+        <div className="flex justify-between px-11 items-center h-[75px] border-[1px] border-black">
             <div className="px-5 py-1 bg-blue-400 rounded-md cursor-pointer text-white">Lead Mangement</div>
             <div className="flex gap-4">
                 <div className="px-5 py-1 bg-blue-400 rounded-md cursor-pointer text-white">Logout</div>
@@ -10,3 +10,4 @@ const Navbar = () => {
     )
 }
 export default Navbar
+

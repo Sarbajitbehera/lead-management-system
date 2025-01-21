@@ -1,11 +1,12 @@
 import { Router } from 'express';
-import { signUpController } from '../controller/singupController.js';
-import { signinController } from '../controller/signinController.js';
+import { signUpController, signinController} from "../controller/userController.js"
+import verifyToken from '../middlewares/verifyToken.js';
+const router = Router({mergeParams: true});
 
 
-const router = Router();
 
 router.post('/signup', signUpController)
 router.post('/signin', signinController)
+
 
 export default router;
